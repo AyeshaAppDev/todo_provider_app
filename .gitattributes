@@ -1,1 +1,17 @@
-fix: show Dart as main language on GitHub
+# Ignore native platform folders completely
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+linux/** linguist-vendored
+windows/** linguist-vendored
+web/** linguist-vendored
+
+# Force Dart to be counted
+*.dart linguist-detectable=true
+
+# Ignore CMakeLists and other native build files
+CMakeLists.txt linguist-generated
+*.cmake linguist-generated
+*.cpp linguist-generated
+*.h linguist-generated
+*.c linguist-generated
